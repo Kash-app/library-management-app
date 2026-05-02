@@ -1,0 +1,226 @@
+/* ============================================================
+   Library Manager – Global Stylesheet
+   ============================================================ */
+
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    background: #f5f6fa;
+    color: #2d3142;
+    line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── Navbar ───────────────────────────────────────────────── */
+.navbar {
+    background: #2d3142;
+    color: #fff;
+    padding: 0 2rem;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.18);
+}
+
+.navbar .brand {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+    margin-right: auto;
+    color: #e0e7ff;
+}
+
+.navbar a {
+    color: #c7d0f8;
+    font-weight: 500;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: color .2s, border-color .2s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    border-color: #6c8fff;
+}
+
+/* ── Container ────────────────────────────────────────────── */
+.container {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ── Page Header ─────────────────────────────────────────── */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2d3142;
+}
+
+/* ── Alerts ───────────────────────────────────────────────── */
+.alert {
+    padding: .75rem 1.25rem;
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.btn {
+    display: inline-block;
+    padding: .5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+.btn-primary   { background: #4361ee; color: #fff; }
+.btn-primary:hover   { background: #3a56d4; }
+
+.btn-secondary { background: #e2e8f8; color: #3a56d4; }
+.btn-secondary:hover { background: #cdd6f5; }
+
+.btn-sm { padding: .3rem .8rem; font-size: .82rem; }
+
+/* ── Data Table ───────────────────────────────────────────── */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+}
+
+.data-table thead {
+    background: #2d3142;
+    color: #e0e7ff;
+}
+
+.data-table th {
+    padding: .9rem 1rem;
+    text-align: left;
+    font-size: .82rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+
+.data-table td {
+    padding: .85rem 1rem;
+    border-bottom: 1px solid #eef0f6;
+    vertical-align: middle;
+}
+
+.data-table tbody tr:last-child td { border-bottom: none; }
+
+.data-table tbody tr:hover { background: #f4f6ff; }
+
+.empty-msg {
+    text-align: center;
+    color: #8892b0;
+    padding: 2rem;
+    font-style: italic;
+}
+
+.mono { font-family: 'Courier New', monospace; font-size: .87em; }
+
+.badge {
+    background: #e0e7ff;
+    color: #4361ee;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+/* ── Form Page ────────────────────────────────────────────── */
+.form-page { max-width: 700px; }
+
+.form-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2d3142;
+}
+
+.card-form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: .88rem;
+    color: #4a4f6a;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.half { flex: 1; }
+
+.form-control {
+    padding: .55rem .85rem;
+    border: 1.5px solid #d1d9f0;
+    border-radius: 6px;
+    font-size: .95rem;
+    transition: border-color .2s;
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4361ee;
+    box-shadow: 0 0 0 3px rgba(67,97,238,.12);
+}
+
+.field-error {
+    color: #c0392b;
+    font-size: .82rem;
+    font-weight: 500;
+}
+
+.form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: .75rem;
+}
