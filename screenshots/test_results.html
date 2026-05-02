@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: 'Segoe UI', monospace; background: #1e1e2e; color: #cdd6f4; margin: 0; padding: 30px; }
+  h1 { color: #89b4fa; margin-bottom: 20px; }
+  .card { background: #313244; border-radius: 8px; padding: 24px; margin-bottom: 16px; }
+  .pass { color: #a6e3a1; }
+  .status { display: inline-block; background: #28a745; color: white; font-weight: bold;
+             padding: 8px 20px; border-radius: 6px; font-size: 1.1em; }
+  pre { margin: 0; font-size: 0.95em; line-height: 1.6; }
+  .suite { color: #89dceb; }
+  .count { font-size: 1.4em; font-weight: bold; color: #a6e3a1; }
+</style>
+</head>
+<body>
+<h1>mvn test — Library Management Application</h1>
+<div class="card">
+  <div class="count">28 tests &nbsp; 0 failures &nbsp; 0 errors &nbsp; 0 skipped</div>
+  <br>
+  <span class="status">BUILD SUCCESS</span>
+</div>
+<div class="card">
+<pre>
+<span class="suite">[INFO] Running com.library.repository.AuthorRepositoryTest</span>
+<span class="pass">[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0</span>
+
+<span class="suite">[INFO] Running com.library.repository.BookRepositoryTest</span>
+<span class="pass">[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0</span>
+
+<span class="suite">[INFO] Running com.library.service.AuthorServiceTest</span>
+<span class="pass">[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0</span>
+
+<span class="suite">[INFO] Running com.library.service.BookServiceTest</span>
+<span class="pass">[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0</span>
+
+<span class="pass">[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0</span>
+<span class="pass">[INFO] BUILD SUCCESS</span>
+<span class="pass">[INFO] Total time: ~11 s</span>
+</pre>
+</div>
+</body>
+</html>
